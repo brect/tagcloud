@@ -4,8 +4,11 @@ var modal = document.getElementById("primeiro-modal");
 //get the button that opens the modal
 var btn = document.getElementById("btn");
 
+
 //get <span> tha closes the modal
 var span = document.getElementsByClassName("fecha-modal")[0];
+
+
 
 
 //abre modal ao clicar no botão
@@ -24,3 +27,13 @@ window.onclick = function(){
         modal.style.display = "none";
     }
 }
+
+
+
+//estilização para hover btn
+btn.onmouseover = function() {
+    modalstyle.backgroundColor = "#000";
+};
+btn.onmouseout = function() {
+    modal.style.backgroundColor = "";
+};
