@@ -1,51 +1,56 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-
-
-*{
-    color: #fff; 
-    font-family: 'Montserrat', sans-serif;
-}
-
 body{
     background-color: #234044;
-    margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
+    color: #fff; 
 }
 
-.painel, #btn{
+.cabecalhoPrincipal{
     background-color: #108d38;
+    color: #fff;
 }
 
-    .painel{
+    .cabecalhoPrincipal .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
         width: 100%;
         height: 50px;
-        margin: 0 auto;
     }
 
-.logo{
-    border: 1px solid #000;
-    float: left;
-}
 
-.menu{
-    float: right;
-    height: 100%;
-    border: 1px solid #000;
-}
-
-    .menu-item{
-        list-style: none;
-        width: 100px;
-        height: 50px;
-        display: inline-block;
-        text-align: center;
-        cursor: pointer;
+    .cabecalhoPrincipal-title{
+        font-weight: bold;
+        font-size: 2em;
     }
 
-    .menu-item:hover{
-        background-color: #0b6427;
+        .container a { 
+            text-decoration:none;
+            color: #fff;
+        }
+
+    .cabecalhoPrincipal-title{
+        margin-left: 30px;
     }
+
+    .cabecalhoPrincipal-nav {
+        display: flex;
+        width: 35%;
+    }
+
+    .cabecalhoPrincipal-nav-link{
+        padding: 10px;
+        transition: .5s;
+    }
+
+    .cabecalhoPrincipal-nav-link:hover{
+        color: #FFF;
+        background-color: #0c6327;
+    }
+
+
 
 .box-content{
     width: 800px;
@@ -55,3 +60,4 @@ body{
     margin: 10% auto;
     color: #000;
 }
+

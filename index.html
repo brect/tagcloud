@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VICKY-CLOUD</title>
+    <title>CLOUD</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/modal.css">
@@ -14,24 +14,44 @@
 
 <body>
 
-    <div class="painel">
+    <header class="cabecalhoPrincipal">
 
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo Virtual Interactions">
+        <div class="container">
+
+            <h1 class="cabecalhoPrincipal-title">
+                <a href="index.html">Gerador Cloud</a>
+            </h1>
+
+            <nav class="cabecalhoPrincipal-nav">
+                <a href="index.html" class="cabecalhoPrincipal-nav-link">Home</a>
+                <a href="#" class="cabecalhoPrincipal-nav-link">Criar</a>
+                <a href="#" class="cabecalhoPrincipal-nav-link">Salvar</a>
+                <a href="#" class="cabecalhoPrincipal-nav-link">Fale Conosco</a>
+            </nav>
         </div>
 
-        <nav class="menu">
-            <ul>
-                <li class="menu-item"><a href="index.html"></a>INÍCIO</li>
-                <li class="menu-item"><a href="html/cria-tag.html">CRIAR</a></li>
-                <li class="menu-item">SALVAR</li>
-            </ul>
-        </nav>
-    </div>
+    </header>
 
     <div class="box-content">
-        <h1>CRIA TAGCLOUD</h1>
+        <div>
+            <label>Insira seu texto aqui:</label>
+            <input type="text" id="txtTitulo" />
+            <button id="btnEnviar" onclick="gravar()">Gerar Texto</button>
+            <div id="divResultado"></div>
+            <script src="js/textCloud.js"></script>
+        </div>
+
+        <!-- <div>
+            <h2>Insira o texto aqui TESTE 1</h2>
+            <p id="demo">Sabendo como remover @@@ os itens que não, , , , existem para fazer uma, . tag. limpa.</p>
+            <button onclick="myFunction()">Try it</button>
+        </div> -->
+
     </div>
+
+
+
+
 
 </body>
 
